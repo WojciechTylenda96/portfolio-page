@@ -19,14 +19,26 @@
     </header>
     <section id="about">
         <h2>O mnie</h2>
-        <img src="images/profile-img.jpg" alt="Moje zdjęcie" id="my-photo">
-        <p>Nazywam się Wojciech i jestem początkującym programistą front-end. Do tej pory nauczyłem się jak budować strony przy użyciu HTML oraz jak je wystylizować przy pomocy CSS. Dodatkowo opanowałem sporo podstawowych zagadnień z JavaScript. Jestem osobą ambitną i z chęcią uczę się nowych rzeczy.</p>
+        <div class="flex">
+            <img src="images/profile-img.jpg" alt="Moje zdjęcie" id="my-photo">
+            <p>Nazywam się Wojciech i jestem początkującym programistą front-end. Do tej pory nauczyłem się jak budować strony przy użyciu HTML oraz jak je wystylizować przy pomocy CSS. Dodatkowo opanowałem sporo podstawowych zagadnień z JavaScript. Jestem osobą ambitną i z chęcią uczę się nowych rzeczy.</p>
+        </div>
     </section>
     <section id="projects">
         <h2>Moje projekty</h2>
         <div class="project-div">
-            <p></p>
-            <img class="project-img" src="images/extension.jpg" alt="Wygląd wtyczki"> 
+            <h3>Wtyczka przeglądarkowa zapisująca stony</h3>
+            <div class="flex">
+                <img class="project-img" src="images/extension.jpg" alt="Wygląd wtyczki">
+                <div class="project-para">
+                    <p>Wtyczka pozwala na tworzenie szybkich zakładek. Wtyczka posiada miejsce do wpisywania adresu strony oraz 3 interaktywne przyciski:</p>
+                    <ul>
+                        <li>"SAVE INPUT" - zapisuje każdą treść, wpisaną w pole input,</li>
+                        <li>"SAVE TAB" - zapisuje adres strony, aktualnie otwartej karty,</li>
+                        <li>"DELETE ALL" - usuwa wszystkie zapisane pozycje.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </body>
