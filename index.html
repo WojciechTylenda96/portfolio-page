@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,43 +20,59 @@
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>O mnie</h2>
-        <div class="flex">
-            <img src="images/profile-img.jpg" alt="Moje zdjęcie" id="my-photo">
-            <p>Nazywam się Wojciech i jestem początkującym programistą front-end. Do tej pory nauczyłem się jak budować strony przy użyciu HTML oraz jak je wystylizować przy pomocy CSS. Dodatkowo opanowałem sporo podstawowych zagadnień z JavaScript. Jestem osobą ambitną i z chęcią uczę się nowych rzeczy.</p>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Moje projekty</h2>
-        <div class="project-div">
-            <h3>Wtyczka przeglądarkowa zapisująca stony</h3>
+    <div id="main">
+        <section id="about">
+            <h2>O mnie</h2>
             <div class="flex">
-                <img class="project-img" src="images/extension.jpg" alt="Wygląd wtyczki">
-                <div class="project-para">
-                    <p>Wtyczka pozwala na tworzenie szybkich zakładek. Wtyczka posiada miejsce do wpisywania adresu strony oraz 3 interaktywne przyciski:</p>
-                    <ul>
-                        <li>"SAVE INPUT" - zapisuje każdą treść, wpisaną w pole input,</li>
-                        <li>"SAVE TAB" - zapisuje adres strony, aktualnie otwartej karty,</li>
-                        <li>"DELETE ALL" - usuwa wszystkie zapisane pozycje.</li>
-                    </ul>
+                <img src="images/profile-img.jpg" alt="Moje zdjęcie" id="my-photo">
+                <p>Nazywam się Wojciech i jestem początkującym programistą front-end. Do tej pory nauczyłem się jak budować strony przy użyciu HTML oraz jak je wystylizować przy pomocy CSS. Dodatkowo opanowałem sporo podstawowych zagadnień z JavaScript. Jestem osobą ambitną i z chęcią uczę się nowych rzeczy.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Moje projekty</h2>
+            <div class="project-div">
+                <h3>Wtyczka przeglądarkowa zapisująca stony</h3>
+                <div class="flex">
+                    <img class="project-img" src="images/extension.jpg" alt="Wygląd wtyczki">
+                    <div class="project-para">
+                        <p>Wtyczka pozwala na tworzenie szybkich zakładek. Wtyczka posiada miejsce do wpisywania adresu strony oraz 3 interaktywne przyciski:</p>
+                        <ul>
+                            <li>"SAVE INPUT" - zapisuje każdą treść, wpisaną w pole input,</li>
+                            <li>"SAVE TAB" - zapisuje adres strony, aktualnie otwartej karty,</li>
+                            <li>"DELETE ALL" - usuwa wszystkie zapisane pozycje.</li>
+                        </ul>
+                        <p>
+                            Kod oprogramowania znajdziesz <a href="https://github.com/WojciechTylenda96/chrome-extension" target="_blank">TUTAJ</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project-div">
-            <h3>Lista zadań</h3>
-            <div class="flex">
-                <img class="project-img" src="images/extension.jpg" alt="Wygląd wtyczki">
-                <div class="project-para">
-                    <p>Wtyczka pozwala na tworzenie szybkich zakładek. Wtyczka posiada miejsce do wpisywania adresu strony oraz 3 interaktywne przyciski:</p>
-                    <ul>
-                        <li>"SAVE INPUT" - zapisuje każdą treść, wpisaną w pole input,</li>
-                        <li>"SAVE TAB" - zapisuje adres strony, aktualnie otwartej karty,</li>
-                        <li>"DELETE ALL" - usuwa wszystkie zapisane pozycje.</li>
-                    </ul>
+            <div class="project-div">
+                <h3>Lista zadań</h3>
+                <div class="flex">
+                    <img class="project-img" src="images/to-do-list.jpg" alt="Wygląd wtyczki">
+                    <div class="project-para">
+                        <p>Lista zadań będzie zapisywać zadania poprzez wpisanie treści w pole input i naciśnięcie przycisku "Add task". Po zapisaniu, treść pojawi się niżej w liście numerowanej.</p>
+                        <p>
+                            Kod oprogramowania znajdziesz <a href="https://github.com/WojciechTylenda96/to-do-list" target="_blank">TUTAJ</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <div id="input-form">
+                <input type="text" placeholder="Imię i nazwisko">
+                <input type="text" placeholder="example@gmail.com">
+                <textarea name="message" placeholder="Twoja wiadomość do mnie..." id="message"></textarea>
+                <button>Wyślij</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p id="footer-para">© 2024 Wojciech Tylenda</p>
+    </footer>
+ 
 </body>
 </html>
