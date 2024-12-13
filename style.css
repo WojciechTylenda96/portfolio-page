@@ -61,7 +61,7 @@ nav a {
     margin-right: 30px;
 }
 
-h2 {
+.titles {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -91,8 +91,8 @@ ul {
 }
 
 a {
-    color: black;
-    font-weight: bold;
+    color: blue;
+    
 }
 
 #input-form {
@@ -186,7 +186,21 @@ button:hover {
     background-color: #0056b3;
 }
 
+.social-links {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    list-style: none;
+}
 
 #footer-para {
     font-size: 14px;
+}
+
+footer li {
+    display: flex;
+}
+
+footer li p {
+    margin-left: 10px;
 }
