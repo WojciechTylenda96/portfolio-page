@@ -20,16 +20,16 @@
             </ul>
         </nav>
     </header>
-    <div id="main">
+    <main id="main">
         <section id="about">
-            <h2>O mnie</h2>
+            <h1 class="titles">O mnie</h1>
             <div class="flex">
                 <img src="images/profile-img.jpg" alt="Moje zdjęcie" id="my-photo">
                 <p>Nazywam się Wojciech i jestem początkującym programistą front-end. Do tej pory nauczyłem się jak budować strony przy użyciu HTML oraz jak je wystylizować przy pomocy CSS. Dodatkowo opanowałem sporo podstawowych zagadnień z JavaScript. Jestem osobą ambitną i z chęcią uczę się nowych rzeczy.</p>
             </div>
         </section>
         <section id="projects">
-            <h2>Moje projekty</h2>
+            <h2 class="titles">Moje projekty</h2>
             <div class="project-div">
                 <h3>Wtyczka przeglądarkowa zapisująca stony</h3>
                 <div class="flex">
@@ -42,7 +42,7 @@
                             <li>"DELETE ALL" - usuwa wszystkie zapisane pozycje.</li>
                         </ul>
                         <p>
-                            Kod oprogramowania znajdziesz <a href="https://github.com/WojciechTylenda96/chrome-extension" target="_blank">TUTAJ</a>
+                            <a href="https://github.com/WojciechTylenda96/chrome-extension" target="_blank">Kod oprogramowania znajdziesz tutaj</a>
                         </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="project-para">
                         <p>Lista zadań będzie zapisywać zadania poprzez wpisanie treści w pole input i naciśnięcie przycisku "Add task". Po zapisaniu, treść pojawi się niżej w liście numerowanej.</p>
                         <p>
-                            Kod oprogramowania znajdziesz <a href="https://github.com/WojciechTylenda96/to-do-list" target="_blank">TUTAJ</a>
+                            <a href="https://github.com/WojciechTylenda96/to-do-list" target="_blank">Kod oprogramowania znajdziesz tutaj</a>
                         </p>
                     </div>
                 </div>
@@ -65,11 +65,11 @@
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Imię</label>
-                    <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                    <input type="text" id="name" name="name" placeholder="Adam" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Twój email" required>
+                    <input type="email" id="email" name="email" placeholder="a.nowak92@gmail.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Wiadomość</label>
@@ -79,8 +79,14 @@
             </form>
         </section>
         
-    </div>
+    </main>
     <footer>
+        <ul class="social-links">
+            <li><img src="images/github.png" alt="Github icon."><p>Github</p></li>
+            <li><img src="images/linkedin.png" alt="Linkedin icon."><p>Linkedin</p></li>
+            <li><img src="images/facebook.png" alt="Facebook icon."><p>Facebook</p></li>
+            <li><img src="images/instagram.png" alt="Instagram icon."><p>Instagram</p></li>
+        </ul>
         <p id="footer-para">© 2024 Wojciech Tylenda</p>
     </footer>
  
