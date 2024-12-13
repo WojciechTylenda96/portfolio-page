@@ -21,29 +21,68 @@ header {
     color: #fff;
 }
 
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 section {
     padding: 100px 40px;
     width: 1500px;
+}
+
+button {
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+input, textarea{
+    padding: 6px 12px;
+    margin: 4px 0;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
 nav a {
     text-decoration: none;
     color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+a {
+    color: blue;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0 20px;
+    background-color: grey;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -52,6 +91,11 @@ nav a {
     margin-right: 20px;
     border-radius: 50%;
     border: 1px solid black;
+}
+
+
+#message {
+    height: 100px;
 }
 
 .project-img {
@@ -66,9 +110,7 @@ nav a {
     text-align: center;
 }
 
-h3 {
-    margin: 10px 0;
-}
+
 
 
 .project-div {
@@ -86,45 +128,16 @@ h3 {
     margin-right: 20px;
 }
 
-ul {
-    margin-left: 20px;
-}
-
-a {
-    color: blue;
-    
-}
-
 #input-form {
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 
-input, textarea{
-    padding: 6px 12px;
-    margin: 4px 0;
-}
-
-#message {
-    height: 100px;
-}
-
-footer {
-    text-align: center;
-    margin: 30px 0;
-}
-
-button {
-    width: fit-content;
-    padding: 4px 12px;
-    border-radius: 4px;
-}
-
 /* Stylizacja sekcji kontaktowej */
 #contact {
+    margin-bottom: 100px;
     padding: 50px 20px;
-    
     text-align: center;
 }
 
@@ -147,13 +160,6 @@ form {
 .form-group {
     margin-bottom: 15px;
     text-align: left;
-}
-
-label {
-    display: block;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    color: #555;
 }
 
 input, textarea {
@@ -193,14 +199,17 @@ button:hover {
     list-style: none;
 }
 
+footer li a {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer li a p {
+    margin-left: 10px;
+}
+
 #footer-para {
     font-size: 14px;
-}
-
-footer li {
-    display: flex;
-}
-
-footer li p {
-    margin-left: 10px;
 }
