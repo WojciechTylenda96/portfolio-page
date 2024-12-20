@@ -213,3 +213,8 @@ footer li a p {
 #footer-para {
     font-size: 14px;
 }
+
+.nav:hover {
+    font-weight: 900;
+    color: black;
+}
